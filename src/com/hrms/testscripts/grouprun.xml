@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="GroupRun" verbose="1" >
+<test name="GroupRun">
+<groups>
+<run>
+<include name="Regression"/>
+<include name="Sanity"/>
+<exclude name="Functional"/>
+</run>
+</groups>
+<classes>
+<class name="com.hrms.testscripts.TC_5130"/>
+<class name="com.hrms.testscripts.TC_5131"/>
+</classes>
+</test>
+</suite>
